@@ -40,6 +40,7 @@ const WishListCard = (props) => {
       <Box>
    
     <Badge onClick={()=>removeWishlistItem(id)} badgeContent={"X"} color="primary"  sx={{ "& .MuiBadge-badge": { fontSize: 20, height: 25, minWidth: 20, cursor:"pointer" } }} >
+    </Badge>
     <Card  onMouseOver={()=>setMouseOver("block")}
      onMouseOut={()=>setMouseOver("none")}
      sx={{ width: 300, height: 320, backgroundColor:"##efefef",
@@ -93,7 +94,7 @@ const WishListCard = (props) => {
       </CardActions>
      
     </Card>
-    </Badge>
+    
 
     </Box>
   )
